@@ -27,7 +27,7 @@ layout: default
 <div id="slide-container" class="container post-page">
 	<div class="row">
 		<article class="col-lg-9">
-			<div class="blog-post col-lg-12">
+			<div class="box col-lg-12">
 				{% if page.img %}
 				<div class="post-image" style="background-image:url({{ page.img | prepend: site.baseurl }})"></div>
 				{% endif %}
@@ -48,8 +48,8 @@ layout: default
 					</ul>
 					<hr class="divider"/>
 				</div>
+				<div id="disqus_thread"></div>
 			</div>
-			<div id="disqus_thread"></div>
 			<script>
 				(function() {
 					var d = document, s = d.createElement('script');
