@@ -75,6 +75,7 @@ body {
 	.box {
 		padding: 0 15px;
 		margin: 0 0 30px;
+		display: flex;
 		.post-image {
 			border-radius: 10px 10px 0 0;
 			background-position: center;
@@ -83,7 +84,7 @@ body {
 			padding-bottom: 37.5%;
 		}
 		.box-content {
-			height: 100%;
+			width: 100%;
 			background: $c1;
 			border-radius: 10px;
 			color: $c3;
