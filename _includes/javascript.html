@@ -14,12 +14,10 @@
 
 		function toggleMobileMenu() {
 			if (document.body.classList.contains(mobileMenuClass)) {
-				console.info('Closing mobile menu');
 				body.classList.remove(mobileMenuClass);
 				body.removeEventListener('touchmove', onTouchMove);
 			}
 			else {
-				console.info('Opening mobile menu');
 				body.classList.add(mobileMenuClass);
 				body.addEventListener('touchmove', onTouchMove);
 			}
@@ -80,6 +78,11 @@
 		e.trigger.className += ' copied';
 		setTimeout(function(){e.trigger.className = 'copy-icon';}, 3000);
 		e.clearSelection();
+	});
+
+	clipboard.on('error', function(e) {
+		e.trigger.className += ' error';
+		setTimeout(function(){e.trigger.className = 'copy-icon';}, 3000);
 	});
 
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
