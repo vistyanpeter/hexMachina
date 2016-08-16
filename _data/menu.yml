@@ -13,7 +13,7 @@
 
 - name: Roadmap
   link: https://github.com/DoclerLabs/hexMachina/milestones
-  redirect: https://github.com/DoclerLabs/hexMachina/milestones
+  external: true
 
 - name: Help
   link: /help

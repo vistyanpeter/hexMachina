@@ -26,8 +26,10 @@ $_fontChaosIcons: map-merge((),()) !global;
 .hm-facebook:before,
 .hm-github:before,
 .hm-gitter:before,
+.hm-google-groups:before,
 .hm-haxe:before,
 .hm-rss:before,
+.hm-stack-overflow:before,
 .hm-twitter:before {
   display: inline-block;
   font-family: "hexMachina";
@@ -55,12 +57,18 @@ $_fontChaosIcons: map-merge($_fontChaosIcons, ('github': '\f102'));
 $_fontChaosIcons: map-merge($_fontChaosIcons, ('gitter': '\f103'));
 .hm-gitter:before { content: "\f103"; }
 
-$_fontChaosIcons: map-merge($_fontChaosIcons, ('haxe': '\f104'));
-.hm-haxe:before { content: "\f104"; }
+$_fontChaosIcons: map-merge($_fontChaosIcons, ('google-groups': '\f104'));
+.hm-google-groups:before { content: "\f104"; }
 
-$_fontChaosIcons: map-merge($_fontChaosIcons, ('rss': '\f105'));
-.hm-rss:before { content: "\f105"; }
+$_fontChaosIcons: map-merge($_fontChaosIcons, ('haxe': '\f105'));
+.hm-haxe:before { content: "\f105"; }
 
-$_fontChaosIcons: map-merge($_fontChaosIcons, ('twitter': '\f106'));
-.hm-twitter:before { content: "\f106"; }
+$_fontChaosIcons: map-merge($_fontChaosIcons, ('rss': '\f106'));
+.hm-rss:before { content: "\f106"; }
+
+$_fontChaosIcons: map-merge($_fontChaosIcons, ('stack-overflow': '\f107'));
+.hm-stack-overflow:before { content: "\f107"; }
+
+$_fontChaosIcons: map-merge($_fontChaosIcons, ('twitter': '\f108'));
+.hm-twitter:before { content: "\f108"; }
 

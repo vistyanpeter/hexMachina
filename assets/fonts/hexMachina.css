@@ -17,8 +17,10 @@
 .hm-facebook:before,
 .hm-github:before,
 .hm-gitter:before,
+.hm-google-groups:before,
 .hm-haxe:before,
 .hm-rss:before,
+.hm-stack-overflow:before,
 .hm-twitter:before {
   display: inline-block;
   font-family: "hexMachina";
@@ -38,6 +40,8 @@
 .hm-facebook:before { content: "\f101"; }
 .hm-github:before { content: "\f102"; }
 .hm-gitter:before { content: "\f103"; }
-.hm-haxe:before { content: "\f104"; }
-.hm-rss:before { content: "\f105"; }
-.hm-twitter:before { content: "\f106"; }
+.hm-google-groups:before { content: "\f104"; }
+.hm-haxe:before { content: "\f105"; }
+.hm-rss:before { content: "\f106"; }
+.hm-stack-overflow:before { content: "\f107"; }
+.hm-twitter:before { content: "\f108"; }

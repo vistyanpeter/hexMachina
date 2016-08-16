@@ -634,6 +634,19 @@ body {
 			font-size: 16px;
 			color: $c3;
 		}
+		i {
+			color: #4c6280;
+			opacity: 0.6;
+			font-size: 65px;
+			-webkit-transition: all 0.4s ease;
+			-moz-transition: all 0.4s ease;
+			-ms-transition: all 0.4s ease;
+			-o-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+		&:hover i {
+			opacity: 1;
+		}
 	}
 }
 .btn.blue-button {
