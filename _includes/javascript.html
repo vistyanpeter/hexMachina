@@ -27,6 +27,15 @@
 			ev.preventDefault();
 		}
 
+		window.addEventListener('orientationchange', function(ev) {
+			if (document.body.classList.contains(mobileMenuClass) && window.innerHeight <= 420) {
+				body.removeEventListener('touchmove', onTouchMove);
+			}
+			else {
+				body.addEventListener('touchmove', onTouchMove);
+			}
+		})
+
 	}());
 
 	var elements = document.getElementsByClassName("code-haxe");
