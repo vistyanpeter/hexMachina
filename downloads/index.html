@@ -20,6 +20,7 @@ title: Downloads
 									<path transform="translate(-15023 -666)" d="M 15025 666 a 2.006 2.006 0 0 0 -2 2 v 13 h 2 V 668 h 10 v -2 h -10 Z m 4 4 a 2.006 2.006 0 0 0 -2 2 v 12 a 2.006 2.006 0 0 0 2 2 h 9 a 2.006 2.006 0 0 0 2 -2 V 672 a 2.006 2.006 0 0 0 -2 -2 h -9 Z m 0 2 h 9 v 12 h -9 V 672 Z" />
 								</svg>
 								<span class="copied-text">Copied this command!</span>
+								<span class="copy-error-message">Press Ctrl+C to copy</span>
 							</span>
 						</p>
 					{% endfor %}
@@ -51,7 +52,7 @@ title: Downloads
 			<div class="text-content">
 				<h3>Other packages</h3>
 				<hr class="divider"/>
-				<p>You can get them from <a href="lib.haxe.org" class="secondary-link">lib.haxe.org</a></p>
+				<p>You can get them from <a href="http://lib.haxe.org" class="secondary-link" target="_blank">lib.haxe.org</a></p>
 				{% for packages in site.data.packages offset: 1 %}
 					<div class="install-row">
 						<p><span id="install-{{packages.id}}" class="install-text">{{ packages.name }}</span>
@@ -60,6 +61,7 @@ title: Downloads
 									<path transform="translate(-15023 -666)" d="M 15025 666 a 2.006 2.006 0 0 0 -2 2 v 13 h 2 V 668 h 10 v -2 h -10 Z m 4 4 a 2.006 2.006 0 0 0 -2 2 v 12 a 2.006 2.006 0 0 0 2 2 h 9 a 2.006 2.006 0 0 0 2 -2 V 672 a 2.006 2.006 0 0 0 -2 -2 h -9 Z m 0 2 h 9 v 12 h -9 V 672 Z" />
 								</svg>
 								<span class="copied-text">Copied this command!</span>
+								<span class="copy-error-message">Press Ctrl+C to copy</span>
 							</span>
 							<a href="{{site.baseurl}}/help" class="help-icon">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
