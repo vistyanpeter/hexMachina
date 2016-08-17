@@ -27,12 +27,17 @@
 			ev.preventDefault();
 		}
 
-		window.addEventListener('orientationchange', function(ev) {
-			if (document.body.classList.contains(mobileMenuClass) && window.innerHeight <= 420) {
-				body.removeEventListener('touchmove', onTouchMove);
+		window.addEventListener('orientationchange', function() {
+			if (document.body.classList.contains(mobileMenuClass)) {
+				if (window.innerHeight <= 420) {
+					body.removeEventListener('touchmove', onTouchMove);
+				}
+				else {
+					body.addEventListener('touchmove', onTouchMove);
+				}
 			}
 			else {
-				body.addEventListener('touchmove', onTouchMove);
+				body.removeEventListener('touchmove', onTouchMove);
 			}
 		})
 
