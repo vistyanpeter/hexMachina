@@ -88,6 +88,15 @@ body {
 			border-radius: 10px;
 			color: $c3;
 			box-shadow: 0 20px 15px rgba(26, 70, 127, 0.1);
+			@media all and (min-width: 1200px) {
+				height: 691px;
+				.tags {
+					padding: 0;
+					position: absolute;
+					bottom: 20px;
+					left: 55px;
+				}
+			}
 		}
 		.category {
 			float: right;
@@ -685,4 +694,23 @@ body {
 		font-size: 26px;
 		font-weight: 300;
 	}
+}
+/* necessary plugin styles */
+.ellip {
+	display: block;
+	height: 100%;
+}
+
+.ellip-line {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+.ellip,
+.ellip-line {
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
 }
