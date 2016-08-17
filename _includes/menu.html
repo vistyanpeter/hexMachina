@@ -2,10 +2,10 @@
 	<li>
 		<a href="
 
-		{% if menu.redirect %} {
-			{ menu.redirect | prepend: site.baseurl }}
-		{% elsif menu.external == true } {
-			{menu.link}
+		{% if menu.redirect %}
+			{{ menu.redirect | prepend: site.baseurl }}
+		{% elsif menu.external %}
+			{{menu.link}}
 		{% else %}
 			{{ menu.link | prepend: site.baseurl }}
 		{% endif %}
