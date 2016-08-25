@@ -1,5 +1,6 @@
 <script type="text/javascript" src="{{"/lib/codemirror/codemirror.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{"/lib/codemirror/mode/haxe/haxe.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{"/lib/codemirror/mode/xml/xml.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{"/lib/flickity/flickity.pkgd.min.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript" src="{{"/lib/clipboard/clipboard.min.js" | prepend: site.baseurl }}"></script>
 
@@ -47,6 +48,24 @@
 	for(var i=0; i<elements.length; i++) {
 		var editor = CodeMirror.fromTextArea(elements[i], {
 			mode: "haxe",
+			lineNumbers: true,
+			theme: "hexmachina",
+			lineWrapping: true,
+			readOnly: true,
+			extraKeys: {
+				"Ctrl-Q": function (cm) {
+					cm.foldCode(cm.getCursor());
+				}
+			},
+			foldGutter: true,
+			gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
+		});
+	}
+	
+	var elements = document.getElementsByClassName("code-xml");
+	for(var i=0; i<elements.length; i++) {
+		var editor = CodeMirror.fromTextArea(elements[i], {
+			mode: "xml",
 			lineNumbers: true,
 			theme: "hexmachina",
 			lineWrapping: true,
