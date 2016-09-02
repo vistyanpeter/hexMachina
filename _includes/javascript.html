@@ -105,8 +105,8 @@
 		}
 		
 		var resetGoogleSearchField = function() {
-			googleSearchField = $('.google-search').eq(0);
-			googleSearchField.html('<gcse:search></gcse:search>');
+			googleSearchField = document.getElementsByClassName('google-search')[0];
+			googleSearchField.innerHTML = '<gcse:search></gcse:search>';
 			
 			initGoogleCustomSearch();
 		};
@@ -119,6 +119,7 @@
 			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
+			
 		};
 		
 		initGoogleCustomSearch();
