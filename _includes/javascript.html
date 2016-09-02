@@ -91,6 +91,7 @@
 		
 		var headerSearchButton = document.getElementsByClassName('search-button')[0];
 		var searchEnabledClass = 'search-enabled';
+		var googleSearchField;
 		headerSearchButton.addEventListener('click', toggleSearchOverlay);
 		
 		function toggleSearchOverlay() {
@@ -98,9 +99,29 @@
 				document.body.classList.remove(searchEnabledClass);
 			}
 			else {
+				resetGoogleSearchField();
 				document.body.classList.add(searchEnabledClass);
 			}
 		}
+		
+		var resetGoogleSearchField = function() {
+			googleSearchField = $('.google-search').eq(0);
+			googleSearchField.html('<gcse:search></gcse:search>');
+			
+			initGoogleCustomSearch();
+		};
+		
+		var initGoogleCustomSearch = function() {
+			var cx = '010997690404295003250:ejhhrxabuqc';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		};
+		
+		initGoogleCustomSearch();
 		
 	}());
 	
