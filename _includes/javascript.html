@@ -86,7 +86,24 @@
 			})
 		}
 	}());
-
+	
+	(function() {
+		
+		var headerSearchButton = document.getElementsByClassName('search-button')[0];
+		var searchEnabledClass = 'search-enabled';
+		headerSearchButton.addEventListener('click', toggleSearchOverlay);
+		
+		function toggleSearchOverlay() {
+			if (document.body.classList.contains(searchEnabledClass)) {
+				document.body.classList.remove(searchEnabledClass);
+			}
+			else {
+				document.body.classList.add(searchEnabledClass);
+			}
+		}
+		
+	}());
+	
 	var clipboard = new Clipboard('.copy-icon');
 	clipboard.on('success', function(e) {
 		e.trigger.className += ' copied';

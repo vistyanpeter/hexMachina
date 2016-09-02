@@ -1,6 +1,13 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+@media all and (max-width: 990px) {
+	body {
+		&.home {
+			margin-top: 80px;
+		}
+	}
+}
 @media all and (max-width: 1200px) {
 	body {
 		&.home {
@@ -34,6 +41,13 @@
 	}
 }
 header {
+	.fa-search {
+		color: #fff;
+		cursor: pointer;
+		font-size: 17px;
+		position: relative;
+		padding: 17px 14px 16px 3px;
+	}
 	.mobile-menu {
 		position: absolute;
 		right: 0;
