@@ -85,6 +85,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['clean','concat', 'sass', 'watch']);
 	grunt.registerTask('js', ['clean:js', 'concat:js', 'watch']);
 	grunt.registerTask('css', ['clean:css', 'concat:sass', 'sass', 'watch']);
-	grunt.registerTask('prod', ['clean','concat', 'uglify', 'sass',])
+	grunt.registerTask('prod', ['clean','concat', 'uglify', 'sass'])
 
 };

@@ -8,5 +8,9 @@
 	ga('create', 'UA-78464445-1', 'auto');
 	ga('send', 'pageview');
 
+	window.siteConfig = {
+		baseUrl: "{{site.baseurl}}"
+	};
+
 </script>
 <script type="text/javascript" src="{{"/lib/simple.js" | prepend: site.baseurl }}"></script>

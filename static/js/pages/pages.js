@@ -4,7 +4,6 @@ app.page.all = function() {
 };
 
 app.page.home = function() {
-	console.info('initializing home');
 	new app.view.CodeMirror();
 
 	app.$carousel = new Flickity('.flickity', {
@@ -16,7 +15,7 @@ app.page.home = function() {
 		lines: 3,
 		responsive: true
 	});
-	$('.carousel-section').parallax({imageSrc: '{{site.baseurl}}/img/pattern-cover.jpg'});
+	$('.carousel-section').parallax({imageSrc:  siteConfig.baseUrl  + '/img/pattern-cover.jpg'});
 	new app.ReadMore('.features');
 	particlesJS.load('particles-js', 'assets/particles.json', function() {});
 
