@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 	{% include head.html %}
-	<body id="page-top" class="{{page.title}}">
+
+
+	<body id="page-top" class="{% if page.class %}{{page.class}}{% else %}{{page.layout}}{% endif %}">
 		{% include search-overlay.html %}
 		{% include header.html %}
 		{{ content }}
