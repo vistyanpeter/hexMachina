@@ -2,7 +2,7 @@
 // Icon Font: hexMachina
 //
 
-$fontChaosFilePath: "./hexMachina" !default;
+$fontChaosFilePath: "./" !default;
 @font-face {
   font-family: "hexMachina";
   src: url("#{$fontChaosFilePath}.eot");

@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 	];
 
 	var csspath = [
-		'./static/css/*.css',
+		'./static/css/vendor/*.scss',
 		'./static/css/*.scss'
 	];
 
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 				src: [
 					'lib/simple.scss'
 				],
-				dest: 'lib/simple.css'
+				dest: 'css/simple.css'
 			}
 		},
 		watch: {
