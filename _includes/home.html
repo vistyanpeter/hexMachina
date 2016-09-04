@@ -178,23 +178,3 @@
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="{{site.baseurl}}/lib/app.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/lib/ReadMore.js"></script>
-<script src="{{site.baseurl}}/lib/jquery/jquery-2.2.4.min.js"></script>
-<script src="{{site.baseurl}}/lib/parallax/parallax.min.js"></script>
-<script src="{{site.baseurl}}/lib/flickity/flickity.pkgd.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/lib/particles/particles.min.js"></script>
-<script type="text/javascript" src="{{site.baseurl}}/lib/jquery-ellipsis/jquery.ellipsis.min.js"></script>
-<script type="text/javascript">
-	app.$carousel = new Flickity('.flickity', {
-		wrapAround: true,
-		prevNextButtons: false
-	});
-	$(".box p").ellipsis({
-		lines: 3,
-		responsive: true
-	});
-	$('.carousel-section').parallax({imageSrc: '{{site.baseurl}}/img/pattern-cover.jpg'});
-	new app.ReadMore('.features');
-	particlesJS.load('particles-js', 'assets/particles.json', function() {});
-</script>

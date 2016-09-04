@@ -5,15 +5,16 @@ module.exports = function(grunt) {
 	var jspath = [
 		'./static/js/jquery/*.js',
 		'./static/js/jquery-ellipsis/*.js',
-		'./static/js/clipboard.min/*.js',
+		'./static/js/clipboard/*.js',
 		'./static/js/codemirror/*.js',
 		'./static/js/codemirror/mode/haxe/*.js',
 		'./static/js/flickity/*.js',
 		'./static/js/parallax/*.js',
 		'./static/js/particles/*.js',
-		'./static/js/app/*.js',
+		'./static/js/app.js',
 		'./static/js/views/*.js',
-		'./static/js/pages/*.js'
+		'./static/js/pages/*.js',
+		'./static/js/starter/*.js'
 	];
 
 	var csspath = [
