@@ -88,11 +88,17 @@
 	}());
 	
 	(function() {
-		
-		var headerSearchButton = document.getElementsByClassName('search-button')[0];
+		var headerSearchButtons = document.getElementsByClassName('toggle-search');
 		var searchEnabledClass = 'search-enabled';
 		var googleSearchField;
-		headerSearchButton.addEventListener('click', toggleSearchOverlay);
+
+		bindSearchButtons();
+
+		function bindSearchButtons() {
+			for (var i = 0; i < headerSearchButtons.length; i++) {
+				headerSearchButtons[i].addEventListener('click', toggleSearchOverlay);
+			}
+		}
 		
 		function toggleSearchOverlay() {
 			if (document.body.classList.contains(searchEnabledClass)) {
