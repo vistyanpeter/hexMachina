@@ -28,7 +28,7 @@ app.view.MobileMenu.prototype = {
 
 	setTouchMove: function() {
 		if (this.body.hasClass(this.mobileMenuActiveCls)) {
-			if (window.innerHeight <= 420) {
+			if (window.innerHeight <= 450) {
 				this.body.off('touchmove', $.proxy(this.onTouchMove, this));
 			}
 			else {
