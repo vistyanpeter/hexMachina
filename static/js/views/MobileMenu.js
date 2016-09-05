@@ -18,11 +18,11 @@ app.view.MobileMenu.prototype = {
 	toggleMobileMenu: function() {
 		if (this.body.hasClass(this.mobileMenuActiveCls)) {
 			this.body.removeClass(this.mobileMenuActiveCls);
-			this.body.on('touchmove', $.proxy(this.onTouchMove, this));
+			this.body.off('touchmove', $.proxy(this.onTouchMove, this));
 		}
 		else {
 			this.body.addClass(this.mobileMenuActiveCls);
-			this.body.off('touchmove', $.proxy(this.onTouchMove, this));
+			this.body.on('touchmove', $.proxy(this.onTouchMove, this));
 		}
 	},
 
