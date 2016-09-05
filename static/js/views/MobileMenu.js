@@ -18,15 +18,15 @@ app.view.MobileMenu.prototype = {
 	toggleMobileMenu: function() {
 		if (this.body.hasClass(this.mobileMenuActiveCls)) {
 			this.body.removeClass(this.mobileMenuActiveCls);
-			this.body.off('touchmove', $.proxy(this.onTouchMove, this));
+			this.setTouchMove();
 		}
 		else {
 			this.body.addClass(this.mobileMenuActiveCls);
-			this.body.on('touchmove', $.proxy(this.onTouchMove, this));
+			this.setTouchMove();
 		}
 	},
 
-	onOrientationChange: function() {
+	setTouchMove: function() {
 		if (this.body.hasClass(this.mobileMenuActiveCls)) {
 			if (window.innerHeight <= 420) {
 				this.body.off('touchmove', $.proxy(this.onTouchMove, this));
@@ -38,6 +38,10 @@ app.view.MobileMenu.prototype = {
 		else {
 			this.body.off('touchmove', $.proxy(this.onTouchMove, this));
 		}
+	},
+
+	onOrientationChange: function() {
+		this.setTouchMove();
 	},
 
 	onTouchMove: function(ev) {
