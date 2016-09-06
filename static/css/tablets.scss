@@ -1,6 +1,3 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
 @media all and (max-width: 1200px) {
 	.hide-on-mobile {
 		display: none;
@@ -218,8 +215,6 @@
 		}
 		.navbar-nav {
 			display: none;
-
-			//NEW
 			float: none !important;
 			li  {
 				width: 100%;
@@ -265,17 +260,6 @@
 				vertical-align: middle;
 			}
 			.navbar-nav {
-				//display: block;
-				//text-align: center;
-				//margin: 0 !important;
-				//width: 100%;
-				//height: 100%;
-				//position: fixed;
-				//left: 0;
-				//top: 80px;
-				//background: rgba(28, 28, 28, 0.90);
-
-				// NEW
 				display: table-cell;
 				text-align: center;
 				margin: 0 !important;
@@ -284,19 +268,12 @@
 				vertical-align: middle;
 
 				li {
-					//width: 100%;
-					//height: calc(100% / 8);
-					//display: table;
-
-					// NEW
 					width: 100%;
 					height: calc(100% / 9);
 					display: table;
 					vertical-align: middle;
 					a {
 						font-size: 30px;
-
-						// NEW
 						vertical-align: middle;
 						display: table-cell;
 						float: none !important;
@@ -369,7 +346,7 @@
 			}
 		}
 		.navbar .navbar-brand {
-			padding: 0 0 0 15px;
+			padding: 0 0 0 15px !important;
 		}
 	}
 }
