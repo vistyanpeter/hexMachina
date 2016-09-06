@@ -36,6 +36,7 @@ app.page.blog = function() {
 		lines: 3,
 		responsive: true
 	});
+	new app.view.VerticalMenu();
 };
 
 app.page.downloads = function() {
