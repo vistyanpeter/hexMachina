@@ -1,6 +1,7 @@
 ---
 published: true
 layout: post
+date: 2016-05-26
 title: Key elements of the framework
 category: Design
 tags: [feature]
