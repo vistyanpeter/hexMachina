@@ -111,7 +111,7 @@ header {
 		}
 		li {
 			a {
-				padding: 15px 25px;
+				padding: 15px 22px;
 				font-size: 20px;
 				font-weight: 300;
 				color: #FFFFFF !important;
@@ -122,6 +122,8 @@ header {
 			}
 			&.button-container {
 				a {
+					height: auto;
+					font: 700 15px/39px 'Lato';
 					margin: 5px 0 0 13px;
 				}
 			}
